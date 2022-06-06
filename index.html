@@ -3,111 +3,193 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@100&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="styles.css">
       <title>Gabriela Nunez</title>
   </head>
   <body>
-    <main>
-      <div>
-        <nav style="margin-left: 70%; font-size: 120%;">
-          <a href="#Inicio">Inicio |</a>
-          <a href="#Portfolio">Portfolio|</a>
-          <a href="#Contatos">Contato </a>
+    <header>
+      <div class="cabeçalho">
+        <div>
+          <img src="img/fotoperfil.jpg" width="60" height="85" class="cabeçalho__img">
+        </div>
+        <nav class="menu">
+          <a class="botao" href="#apresentação">Apresentação</a>
+          <a class="botao" href="#formacao">Formação</a>
+          <a class="botao" href="#experiencia">Experiência</a>
+          <a class="botao" href="#projetos">Projetos</a>
+          <a class="botao" href="#contato">Contato</a>
         </nav>
       </div>
+    </header>
 
-      <section>
-        <figure> 
-          <img src="img/Foto.jpg" width="190" height="270" alt="logo com balões e texto Nohe balões">
-          <h1> <figcaption id="Inicio">Gabriela Nuñez</figcaption> </h1>
-        </Figure>
-        <div>
-          <p> Sou Gabriela Nuñez, Venezuelana e atualmente estou morando em São Paulo Brasil, sou apaxionada pelas ciencias exatas e a tecnología</p>
+    <main>
+      <section class="container">
+        <!--Fila portada e supercard com apresentação-->
+        <div class="portada"> 
+          <span class="img__portada">
+          <img src="https://media-exp1.licdn.com/dms/image/C5616AQHktIBpi__i_A/profile-displaybackgroundimage-shrink_350_1400/0/1640618956557?e=1659571200&v=beta&t=Ei9utzSIroWUFlEc-H5hfNmTQ4GaapfehgcndINSYP0" alt="foto Gaby portada" class="img__portada">
+          </span>
+
+          <!--Super card com presentação e avatar-->
+          <span class="super__card">
+            <span class="super__card__img"> <img src="img/Fotoportada.jpg" width="75" height="100" alt="foto perfil"> </span>
+            <!-- <span class="avatar__badge1"></span>
+            <span class="avatar__badge2"></span>
+            <span class="avatar__badge3"></span>-->
+            
+
+            <span class="super__card__texto">
+              <h1 id="apresentação">Gabriela Nuñez</h1>
+              <h3>Aprendendo Full Stack</h3>
+              <h4>Olá</h4>
+              <p> Sou Gabriela Nuñez, Venezuelana e atualmente estou morando em São Paulo Brasil, sou apaxionada pelas ciencias exatas e a tecnología. Sou formada em licenciatura Química. Tive a oportunidade de administrar aulas no ensino medio e educação para adultos, também participei no desenvolvimento e realização de cursos de formação e capacitação na area corporativa, sou apaixonada por ensinar e aprender. Atualmente estou me formando como <strong>full-stack em @toti-edu.</p> 
+              <p>Concentrada em aprender e atualizarme na tecnología de programação.</p>
+            </span>
+          </span>
         </div>
       </section>
 
-      <section>
-        <h2> Estudos e Objetivos </h2>
-        <div>
+      <!--card formação-->
+      <section class="card__formaçao">
+        <div class="card__formacao__texto">
+          <h2 id="formacao">Formação</h2>
           <ul>
-              <li><p>Sou formada em licenciatura Química. Tive a oportunidade de administrar aulas no ensino medio e educação para adultos, também participei no desenvolvimento e realização de cursos de formação e capacitação na area corporativa, sou apaixonada por ensinar e aprender.</p></li>
-              <li><p>Fiz um Mestrado em Ciência e Tecnología química e Doutorado em Biossistemas.</p></li>
-              <li><p>Atualmente estou me formando como <strong>full-stack em @toti-edu.</strong> Concentrada em aprender e atualizarme na tecnología de programação</p></li>
+            <li><P>2022-Atual</P></li>
+            <li><h3>Desenvolvedor full-stack</h3></li>
+            <li><p>toti-edu. Brasil</p></li>
           </ul>
+          <br>
+          <ul>
+            <li><P>2018-2022</P></li>
+            <li><h3>Doutora em Biossistemas</h3></li>
+            <li><p>Universidade Federal do ABC (UFABC)- São Paulo, Brasil</p></li>
+          </ul>
+          <br>
+          <ul>
+            <li><P>2016-2018</P></li>
+            <li><h3>Mestre em Ciência e tecnologia química</h3></li>
+            <li><p>Universidade Federal do ABC (UFABC)- São Paulo, Brasil</p></li>
+          </ul>
+          <br>
+          <ul>
+            <li><P>2006-2012</P></li>
+            <li><h3>Licenciatura em química</h3></li>
+            <li><p>Instituto Pedagógico de Caracas (IPC)- Caracas, Venezuela</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!--card experiencia-->
+      <section class="card__experiencia">
+        <div class="card__experiencia__texto">
+          <h2 id="experiencia">Experiência</h2>
+          <ul>
+            <li><P>2015</P></li>
+            <li><h3>Preparados Alimenticios Internacionales, C.A. (PAICA). Venezuela</h3></li>
+            <li><p>Treinamento e Desenvolvimento</p></li>
+          </ul>
+          <br>
+          <ul>
+            <li><P>2012-2016</P></li>
+            <li><h3>Unidad Educativa Antonio José de Sucre. Venezuela</h3></li>
+            <li><p>Professora de Química</p></li>
+          </ul>
+          <br>
+          <ul>
+            <li><P>2011-2012</P></li>
+            <li><h3>Instituto Unitario del Centro. Venezuela</h3></li>
+            <li><p>Professora de química, educação adultos. Venezuela</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!--card Projetos-->
+      <section class="projetos">
+        <h2 id="projetos">Projetos</h2>
+        <div class="container__card__projetos">
+          <!--card dos projetos 1,2 y 3-->
+          <div class="card__projetos1">
+            <div class="card__projetos1__img">
+              <a href="https://github.com/Gabynze/HTML_CSS_AULA4" target="_blank" rel="noopener noreferrer"><img src="img/html.jpg" alt= "notebook com codigo" class="img_projeto1"></a>
+            </div>
+            <div class="card__projetos1__body">
+              <h3>Criando Usando HTML</h3>
+              <P>Minha Primeira página de receita feita com HTML</P>
+              <span class="card-button">
+                <a href="https://github.com/Gabynze/HTML_CSS_AULA4" target="_blank" rel="noopener noreferrer"><button>Repósitorio</button></a>
+              </span>
+            </div>
+          </div>
+
+          <div class="card__projetos2">
+            <div class="card__projetos2__img">
+              <a href="https://github.com/Gabynze/CSS__Exercicio7" target="_blank" rel="noopener noreferrer"><img src="img/Noheba.jpg" alt= "logo NoheBaloes"class="img__projeto2"></a>
+            </div>
+            <div class="card__projetos2__body">
+              <h3>Criando Usando HTML e CSS</h3>
+              <P>Minha Primeira página de Nohe Balões feita com HTML e CSS</P>
+              <span class="card-button">
+                <a href="https://github.com/Gabynze/CSS__Exercicio7" target="_blank" rel="noopener noreferrer"><button>Repósitorio</button></a>
+              </span>
+            </div>
+          </div>
+
+          <div class="card__projetos3">
+            <div class="card__projetos3__img">
+              <a href="https://github.com/Gabynze/CSS__Exercicio7" target="_blank" rel="noopener noreferrer"><img src="img/Portafólio.jpg" alt= "Portafolio"></a>
+            </div>
+            <div class="card__projetos3__body">
+              <h3>Criando usando HTML e CSS</h3>
+              <P>Meu Portafólio com HTML e CSS</P>
+              <span class="card-button">
+                <a href="https://github.com/Gabynze/CSS__Exercicio7" target="_blank" rel="noopener noreferrer"><button>Repósitorio</button></a>
+              </span>
+            </div>
+          </div>
         </div>
       </section>
           
-      <section>
-          <h2> Saiba mais </h2>
-          <div>
-              <ul>
-                  <li><a href="https://www.linkedin.com/in/gabriela-nohemi-nu%C3%B1ez-esteves-b527aa15b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8MijwungRba6yCaFhl5ivA%3D%3D" target="_blank"> Linkedin </a></li>
-                  <li><a href="https://github.com/Gabynze" target="_blank" rel="noopener nooreferrer"> Github </a></li>
-                  <li><a href="https://twitter.com/Gabynze" target="_blank" rel="noopener nooreferrer"> Twitter </a></li>
-              </ul>
+      <!--card contato-->
+      <section class="contato">
+        <h2 id="contato">Contato</h2>
+        <div class="contato__container">
+          <div class="contato__texto">
+            <p>Entre em contato</p>
+            <div class="contato__redes"> 
+              <span class="contato__linkedin"> <a href="https://www.linkedin.com/in/gabriela-nohemi-nu%C3%B1ez-esteves-b527aa15b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8MijwungRba6yCaFhl5ivA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+              <span class="contato__github"> <a href="https://github.com/Gabynze" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+            </div>
+            <p>Também pode preencher o formulário ao lado e entrarei em contato o mais rápido possivel</p>
           </div>
-      </section>
-
-      <!--Criar card para portafolio-->
-      <section>
-        <h1 id="Portfolio">Portafólio</h1>
-        <div>
-            <p>
-                Criando usando front-end  
-                Em construção
-            </p>
-            <div>
-                <button>Saiba mais</button>
-            </div>
-            <p>
-                Criando usando Back Back-end
-                Em construção  
-            </p>
-            <div>
-                <button>Saiba mais</button>
-            </div>
-        </div>  
-      </section>
-              
-      <section>
-        <h2 id="Contatos">Contatos</h2>
-        <div>
-          <ul>
-              <li> Email: gabynz18@gmail.com</a></li>
-          </ul>
+          <div class="contato__formulario">
+            <form action="" method="POST">
+              <label for="name">Nome:</label><br>
+              <input type="text" id="name" name="name" required><br>
+              <label for="sname">Sobrenome:</label><br>
+              <input type="text" id="snome" name="snome" required>
+    
+              <br>
+              <label for="email">Seu e-mail:</label>
+              <input type="email" id="email" name="email">
+              <br>
+    
+              <label for="Observações">Observações:</label>
+    
+              <textarea id="Observações" name="observações" rows="4" cols="20" placeholder="Tire todas as suas dúvidas ou envie suas sugestões">
+              </textarea> 
+              <br>
+  
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
-        <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233794.8591915442!2d-46.56294137901429!3d-23.7100986193548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4278871d7eef%3A0x9eaaca862adb4ede!2sSanto%20Andr%C3%A9%2C%20Estado%20de%20S%C3%A3o%20Paulo!5e0!3m2!1ses!2sbr!4v1652977113752!5m2!1ses!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </section>
+      </setion>
+     
 
-      <section>
-        <h2> Envie sua Mensagem </h2>
-        <form action="" method="POST">
-          <label for="name">Nome:</label><br>
-          <input type="text" id="name" name="name" required><br>
-          <label for="sname">Sobrenome:</label><br>
-          <input type="text" id="snome" name="snome" required>
-
-          <br><br>
-          <label for="email">Seu e-mail:</label>
-          <input type="email" id="email" name="email">
-          <br><br>
-
-          <label for="Observações">Observações:</label>
-
-          <textarea id="Observações" name="observações" rows="4" cols="50" placeholder="Tire todas as suas dúvidas ou envie suas sugestões">
-          </textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-      <section>
-        <h2>Curiosidades</h2>
-        <div>
-          <p>Começando minha trasição de carreira na toti-edu</p>
-          <video width="250" height="250" controls src="video/Gaby_Toti.mp4"></video>
-        </div>
-      </section>
     </main>
   </body>
 </html>
