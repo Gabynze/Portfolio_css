@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Manjari', sans-serif;
+  font-family:'Inter', sans-serif;
   box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ body {
 
 /** Styles Header**/
 .cabeçalho {
-  background-color: rgb(4, 1, 21);
+  background-color: rgb(245, 239, 230);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -33,13 +33,19 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: 5px; 
 }
 
 .cabeçalho__img:hover {
   cursor:pointer;
-  -webkit-box-shadow: 5px 5px 15px 5px #e9ba36;
-   box-shadow: 0px 0px 1px 2px #f69b88;
+  -webkit-box-shadow: 5px 5px 15px 5px rgb(42, 27, 5);
+   box-shadow: 0px 0px 1px 2px #212c03;
+}
+
+.cabeçalho__img:a {
+  height: 70px;
+  width: 65px;
+  overflow: none;
+  
 }
 
 .menu {
@@ -54,12 +60,12 @@ body {
   text-align: center;
   font-size: 16px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(245, 227, 179);
+  color: rgb(42, 27, 5);
 }
 .menu .botao:hover {
   cursor:pointer;
-  -webkit-box-shadow: 5px 5px 15px 5px #e9ba36;
-    box-shadow: 0px 0px 1px 2px #eef3a8;
+  -webkit-box-shadow: 5px 5px 15px 5px #392e11;
+    box-shadow: 0px 0px 1px 2px #343703;
   border-radius: 5px;
   border-style: 1px solid;
 }
@@ -70,18 +76,18 @@ body {
 .portada {
   display: flex;
   flex-direction: column;
-  background-color: rgb(10, 12, 52);
+  background-color: rgb(255, 226, 196);
   position: relative;
 }
 
 .img__portada{
   width: 100%;
-  height: 220px;
+  height: 200px;
 }
 /** supercard imagem e apresentação**/
 .super__card__img {
   display: flex;
-  border: 1px solid #e9ba36;
+  border: 1.5px solid rgb(247, 172, 125);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -89,8 +95,8 @@ body {
   height: 150px;
   width: 150px;
   position: absolute;
-  top: 30%;
-  left: 19%;
+  top: 28%;
+  left: 18%;
 }
 
 .super__card__img img {
@@ -110,8 +116,10 @@ body {
 .super__card__texto {
   width: 700px;
   margin-left: 18%;
-  color: aliceblue;
+  color: rgb(61, 20, 19);
   line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .super__card__texto h4 {
@@ -120,15 +128,15 @@ body {
 }
 
 .super__card__texto h3 {
-  color: rgb(245, 227, 179);
+  color: rgb(90, 67, 4);
 }
 
 
 
 /** Styles parte III Formação**/
 .card__formaçao {
-  background-color: rgb(4, 1, 21);
-  color: aliceblue;
+  background-color: rgb(245, 245, 220);
+  color: rgb(61, 20, 19);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -142,22 +150,22 @@ body {
 }
 
 .card__formacao__texto h2{
-  color: rgb(245, 227, 179);
+  color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 
 .card__formacao__texto ul{
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
-  border-left: 4px solid rgb(159, 157, 157);
+  border-left: 3.5px solid rgb(78, 56, 17);
   padding-left: 12px;
 }
 
 /** Styles parte IV Experiencia**/
 .card__experiencia{
-  background-color: rgb(10, 12, 52);
-  color: aliceblue;
+  background-color: rgb(247, 235, 213);
+  color: rgb(61, 20, 19);
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -170,34 +178,34 @@ body {
 }
 
 .card__experiencia__texto h2 {
-  color: rgb(245, 227, 179);
+  color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 
 .card__experiencia__texto ul {
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
-  border-left: 4px solid rgb(159, 157, 157);
+  border-left: 3.5px solid rgb(78, 56, 17);
   padding-left: 12px;
 }
 
 /** Styles parte v Projetos**/
 
 .projetos{
-  background-color: rgb(59, 62, 87);
+  background-color: rgb(255, 226, 196);
   display: flex;
   flex-direction: column;
 }
 
 .projetos h2 {
-  color: rgb(245, 227, 179);
+  color: rgb(0, 0, 0);
   padding-left: 32%;
   padding-top: 1%;
 }
 
 .container__card__projetos{
-  height: 300px;
+  height: 320px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,16 +216,17 @@ body {
 .card__projetos1,
 .card__projetos2, 
 .card__projetos3 {
-  background-color: rgb(41, 43, 59);
+  background-color: rgb(247, 235, 213);
   display: flex;
   flex-direction: column;
-  height: 280px;
-  width: 200px;
+  height: 300px;
+  width: 250px;
   align-content: stretch;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(0 0 0 / 12%);
   overflow: hidden;
   margin-left: 3%;
+  margin-bottom: 10px;
 }
 
 .card__projetos1:hover,
@@ -262,7 +271,7 @@ body {
 .card__projetos1__body h3,
 .card__projetos2__body h3,
 .card__projetos3__body h3 {
-  color: rgb(245, 227, 179);
+  color: rgb(83, 24, 31);
   text-align: center;
 }
 
@@ -272,19 +281,19 @@ body {
 .card-button button {
   text-align: center;
   min-height: 25%;
-  color: aliceblue;
-  font-size: 12px;
+  color: rgb(42, 27, 5);
+  font-size: 14px;
   line-height: 1.4;
+  margin-bottom: 5px;
 }
 
 .card-button button{
   text-decoration: none;
-  border-style: solid 1px;
-  border-color: rgb(255, 255, 255);
+  border-style: solid;
   border-radius: 6px;
   text-align: center;
   font-size: 14px;
-  color: rgb(16, 14, 14);
+  color: rgb(42, 27, 5);
   font-weight: bold;
   height: 30px;
   width: 100px;
@@ -293,14 +302,14 @@ body {
 
 /** Styles parte VI contatos**/
 .contato {
-  background-color: rgb(4, 1, 21);
+  background-color: rgb(245, 239, 230);
   display: flex;
   flex-direction: column;
-  color: azure;
+  color: rgb(42, 27, 5);
 }
 
 .contato h2 {
-  color: rgb(245, 227, 179);
+  color: rgb(0, 0, 0);
   padding-left: 32%;
   padding-top: 2%;
 }
@@ -309,16 +318,20 @@ body {
  display: flex;
  flex-direction: row;
  justify-content: center;
+ align-content: flex-start;
+ text-align: start;
+ padding-bottom: 3%;
 }
 
-.contato__texto{ 
-  width: 25%;
+.contato__texto { 
+  width: 30%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
+  line-height: 1.4;
 }
 
 .contato__redes {
@@ -331,10 +344,10 @@ body {
   margin-bottom: 5%;
 }
 .contato__redes a {
-  background-color: #34246d;
-  color: aliceblue;
-  height: 35px;
-  width: 35px;
+  background-color: rgb(245, 214, 155);
+  color: rgb(42, 27, 5);
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display:flex;
   align-items: center;
@@ -344,22 +357,22 @@ body {
 }
 
 .contato__formulario {
-  width: 30%;
+  width: 40%;
+  height: 40%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content:space-between;
+  align-items: center;
+  align-content: center;
   padding-left: 2%;
   padding-right: 2%;
 }
 
-.contato__formulario form {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  line-height: 1.4;
-  padding-top: 5%;
-  padding-bottom: 5%;
+.contato__formulario input,
+.contato__formulario textarea {
+  width:100%;
+  margin-bottom: 10px;
 }
 
 .contato__formulario button{
