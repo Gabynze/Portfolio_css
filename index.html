@@ -115,7 +115,7 @@
               <h3>Criando Usando HTML</h3>
               <P>Minha Primeira página de receita feita com HTML</P>
               <span class="card-button">
-                <a href="https://github.com/Gabynze/HTML_CSS_AULA4" target="_blank" rel="noopener noreferrer"><button>Repósitorio</button></a>
+                <a href="https://github.com/Gabynze/HTML_CSS_AULA4" target="_blank" rel="noopener noreferrer"><button>Repositorio</button></a>
               </span>
             </div>
           </div>
@@ -128,7 +128,7 @@
               <h3>Criando Usando HTML e CSS</h3>
               <P>Minha Primeira página de Nohe Balões feita com HTML e CSS</P>
               <span class="card-button">
-                <a href="https://github.com/Gabynze/CSS__Exercicio7" target="_blank" rel="noopener noreferrer"><button>Repósitorio</button></a>
+                <a href="https://github.com/Gabynze/CSS__Exercicio7" target="_blank" rel="noopener noreferrer"><button>Repositorio</button></a>
               </span>
             </div>
           </div>
@@ -141,7 +141,20 @@
               <h3>Criando usando HTML e CSS</h3>
               <P>Meu Portafólio com HTML e CSS</P>
               <span class="card-button">
-                <a href="https://github.com/Gabynze/portfolio_css" target="_blank" rel="noopener noreferrer"><button>Repósitorio</button></a>
+                <a href="https://github.com/Gabynze/portfolio_css" target="_blank" rel="noopener noreferrer"><button>Repositorio</button></a>
+              </span>
+            </div>
+          </div>
+
+          <div class="card__projetos4">
+            <div class="card__projetos4__img">
+              <a href="https://github.com/Gabynze/Consumo_API_JS" target="_blank" rel="noopener noreferrer"><img src="Img/JS.jpg" alt= "Portafolio"></a>
+            </div>
+            <div class="card__projetos4__body">
+              <h3>Criando usando HTML, CSS e JS</h3>
+              <P>Consumindo uma API com JavaScript</P>
+              <span class="card-button">
+                <a href="https://github.com/Gabynze/Consumo_API_JS" target="_blank" rel="noopener noreferrer"><button>Repositorio</button></a>
               </span>
             </div>
           </div>
@@ -162,27 +175,43 @@
             <p>Também pode preencher o formulário ao lado e entrarei em contato o mais rápido possivel</p>
           </div>
           <div class="contato__formulario">
-            <form action="" method="POST">
-              <label for="name">Nome:</label>
-              <input type="text" id="name" name="name" required><br>
-              <label for="sname">Sobrenome:</label>
-              <input type="text" id="snome" name="snome" required><br>
-    
-              <label for="email">Seu e-mail:</label>
-              <input type="email" id="email" name="email"><br>
-    
-              <label for="Observações">Observações:</label>
-    
-              <textarea id="Observações" name="observações" rows="4" cols="20" placeholder="Tire todas as suas dúvidas ou envie suas sugestões">
-              </textarea> 
+            <form action="" id="form" method="POST" class="form container">
+
+              <div class="form-control">
+                <label for="name">Nome:</label>
+                <i class="fa-solid fa-check img-sucesso"></i>
+                <input type="text" id="input-nome" name="name">
+                <small>Error message</small>
+              </div>
+
+              <div class="form-control">
+                <label for="sname">Sobrenome:</label>
+                <i class="fa-solid fa-check img-sucesso"></i>
+                <input type="text" id="input-snome" name="snome">
+                <small>Error message</small>
+              </div>
+              
+              <div class="form-control">
+                <label for="email">Seu e-mail:</label>
+                <i class="fa-solid fa-check img-sucesso"></i>
+                <input type="text" id="input-email" name="email" class="form-control email">
+                <small>Error message</small>
+              </div>
+              
+              <div class="form-control">
+                <label for="Observações">Observações:</label>
+                <i class="fa-solid fa-check img-sucesso"></i>
+                <textarea id="Observaçoes" name="observações" rows="4" cols="20" placeholder="Tire todas as suas dúvidas ou envie suas sugestões">
+                </textarea> 
+                <small>Error message</small>
+              </div>
   
-              <button type="submit">Enviar</button>
+              <button id="btn-submit" type="submit">Enviar</button>
             </form>
           </div>
         </div>
       </setion>
-     
-
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -212,10 +212,11 @@ body {
   align-items: center;
 }
 
-/** Styles parte v card Projetos1,2,3 **/
+/** Styles parte v card Projetos1,2,3,4 **/
 .card__projetos1,
 .card__projetos2, 
-.card__projetos3 {
+.card__projetos3,
+.card__projetos4 {
   background-color: rgb(247, 235, 213);
   display: flex;
   flex-direction: column;
@@ -231,13 +232,15 @@ body {
 
 .card__projetos1:hover,
 .card__projetos2,
-.card__projetos3 {
+.card__projetos3,
+.card__projetos4 {
   box-shadow: 0 0 1px 1px rgba(0 0 0 / 7%), 0 10px 15px 0 rgba(0 0 0 / 10%);
 }
 
 .card__projetos1__img,
 .card__projetos2__img,
-.card__projetos3__img {
+.card__projetos3__img,
+.card__projetos4__img {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -249,7 +252,8 @@ body {
 
 .card__projetos1__img img,
 .card__projetos2__img img, 
-.card__projetos3__img img {
+.card__projetos3__img img,
+.card__projetos4__img img {
   object-fit: contain;
   height: 100%;
   width:100%;
@@ -258,7 +262,8 @@ body {
 
 .card__projetos1__body,
 .card__projetos2__body,
-.card__projetos3__body {
+.card__projetos3__body,
+.card__projetos4__body {
   height:50%;
   display: flex;
   flex-direction: column;
@@ -270,7 +275,8 @@ body {
 
 .card__projetos1__body h3,
 .card__projetos2__body h3,
-.card__projetos3__body h3 {
+.card__projetos3__body h3,
+.card__projetos4__body h3 {
   color: rgb(83, 24, 31);
   text-align: center;
 }
@@ -278,6 +284,7 @@ body {
 .card__projetos1__body p,
 .card__projetos2__body p,
 .card__projetos3__body p,
+.card__projetos4__body p,
 .card-button button {
   text-align: center;
   min-height: 25%;
@@ -372,7 +379,40 @@ body {
 .contato__formulario input,
 .contato__formulario textarea {
   width:100%;
-  margin-bottom: 10px;
+}
+
+.form-control {
+  margin-bottom: 1px
+}
+
+.form-control i {
+  visibility: hidden;
+}
+
+.form-control.sucesso i.img-sucesso {
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  /* position: absolute; */
+  margin-top: 5px;
+  margin-left: 5PX ;
+  font-size: 14px;
+}
+
+.form-control.sucesso input,
+.form-control.sucesso textarea{
+  border: 2px solid #4ECA64;
+}
+.form-control.error input,
+.form-control.error textarea{
+  border: 2px solid #DB5A5A;
+}
+
+.form-control.error small{
+  color: #DB5A5A;
+  visibility: visible;
 }
 
 .contato__formulario button{
